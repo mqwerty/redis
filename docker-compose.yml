@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis:
+    container_name: redis
+    build: .
+    image: edmitry/redis
+    restart: always
+    volumes:
+      - socks:/socks
+    ports:
+      - 6379:6379
+    sysctls:
+      net.core.somaxconn: '511'
+volumes:
+  socks:
