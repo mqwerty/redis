@@ -1,13 +1,21 @@
 # directories
-/.idea/
 /tmp/
 
 # keep
 !.gitkeep
 
-# debug/cache
+# debug/log/cache
 bash.exe.stackdump
 nohup.out
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # OS-specific files
 .DS_Store
