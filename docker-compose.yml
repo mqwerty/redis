@@ -11,5 +11,10 @@ services:
       - 6379:6379
     sysctls:
       net.core.somaxconn: '511'
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 1s
+      timeout: 1s
+      retries: 60
 volumes:
   socks:

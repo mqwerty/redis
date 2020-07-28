@@ -1,3 +1,6 @@
+# files
+/docker-compose.override.yml
+
 # directories
 /tmp/
 
